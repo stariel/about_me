@@ -1,5 +1,10 @@
+* {
+  font-family: century, sans-serif;
+}
 h1 {
-font-family: century, sans-serif;
-font-size: 20px;
+font-size: 50px;
 color: indigo;
+}
+img {
+  border-radius: 10%;
 }
