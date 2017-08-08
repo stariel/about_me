@@ -41,3 +41,31 @@ else if (a3.toLowerCase() === 'no') {
 else {
   alert ('Just type \"yes\" or \"no\", it\'s not that hard!');
 }
+
+var q4 = 'Is Ariel Canadian?';
+var a4 = prompt(q4);
+console.log('Q: ' + q4);
+console.log('A:' + a4);
+if (a4.toLowerCase() === 'yes') {
+  alert ('No, Ariel grew up in Seattle.');
+}
+else if (a4.toLowerCase() === 'no') {
+  alert ('Correct. Ariel is from Seattle!');
+}
+else {
+  alert ('Why do you insist on being difficult?');
+}
+
+var q5 = 'Does Ariel have pets?';
+var a5 = prompt(q5);
+console.log('Q: ' + q5);
+console.log('A:' + a5);
+if (a5.toLowerCase() === 'yes') {
+  alert ('Right, Ariel has two cats.');
+}
+else if (a5.toLowerCase() === 'no') {
+  alert ('Sorry, Ariel has two cats.');
+}
+else {
+  alert ('I\'m starting to think you are not my friend?');
+}
