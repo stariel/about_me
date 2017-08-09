@@ -96,6 +96,21 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-var q7 = '';
+var favPie = ['strawberry rhubarb', 'blackberry', 'pumpkin', 'coconut cream', 'lemon meringue'];
+var q7 = 'Name one of Ariel\'s top 5 flavors of pie';
+for (var i = 0; i < 6; i++) {
+  var a7 = prompt (q7);
+  if (favPie.includes(a7)) {
+    alert ('Correct! Great job! My favorite pie flavors are: ' + favPie);
+    i += 6;
+    score ++;
+  }
+  else if (i < 5) {
+    alert ('Sorry, try again!');
+  }
+  else if (i === 5) {
+    alert ('You ran out of guesses. My favorite pie flavors are: ' + favPie);
+  }
+}
 
 alert ('Thanks so much for playing my guessing game! You got ' + score + '/7 correct!');
