@@ -1,4 +1,6 @@
-/* 'use strict';
+'use strict';
+
+var score = 0;
 
 var name = prompt('Hello! What is your name?');
 alert ('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
@@ -12,6 +14,7 @@ if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' ) {
 }
 else if (a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n') {
   alert ('Correct! Ariel has two siblings. Great work,' + name + '!');
+  score++;
 }
 else {
   alert (name + ', you didn\'t answer the question!');
@@ -22,7 +25,8 @@ var a2 = prompt(q2);
 console.log('Q: ' + q2);
 console.log('A:' + a2);
 if (a2.toLowerCase() === 'yes' || a2.toLowerCase() === 'y') {
-  alert ('You\'re right,' + name + '! Ariel is crazy about knitting.');
+  alert ('You\'re right, ' + name + '! Ariel is crazy about knitting.');
+  score++;
 }
 else if (a2.toLowerCase() === 'no' || a2.toLowerCase() === 'n') {
   alert ('You must not know her very well, knitting is Ariel\'s favorite hobby.');
@@ -40,6 +44,7 @@ if (a3.toLowerCase() === 'yes' || a3.toLowerCase() === 'y') {
 }
 else if (a3.toLowerCase() === 'no' || a3.toLowerCase() === 'n') {
   alert ('You\'re right, Ariel loves metal music.');
+  score++;
 }
 else {
   alert ('Just type \"yes\" or \"no\", it\'s not that hard!');
@@ -54,6 +59,7 @@ if (a4.toLowerCase() === 'yes' || a4.toLowerCase() === 'y') {
 }
 else if (a4.toLowerCase() === 'no' || a4.toLowerCase() === 'n') {
   alert ('Correct. Ariel is from Seattle!');
+  score++;
 }
 else {
   alert ('Why do you insist on being difficult?');
@@ -65,20 +71,22 @@ console.log('Q: ' + q5);
 console.log('A:' + a5);
 if (a5.toLowerCase() === 'yes' || a5.toLowerCase() === 'y') {
   alert ('You\'re right, ' + name + ', Ariel has two cats.');
+  score++;
 }
 else if (a5.toLowerCase() === 'no' || a5.toLowerCase() === 'n') {
   alert ('Sorry, Ariel has two cats.');
 }
 else {
   alert ('I\'m starting to think you are not my friend, ' + name + '.');
-} */
+}
 
 var q6 = 'What year was Ariel born?';
 for (var i = 0; i < 4; i++) {
-  a6 = prompt (q6);
+  var a6 = prompt (q6);
   if (a6 === '1982') {
     alert ('Correct! Great job!');
     i += 4;
+    score ++;
   }
   else if (i < 3) {
     alert ('Sorry, try again!');
@@ -87,3 +95,7 @@ for (var i = 0; i < 4; i++) {
     alert ('You ran out of guesses. Ariel was born in 1982.');
   }
 }
+
+var q7 = '';
+
+alert ('Thanks so much for playing my guessing game! You got ' + score + '/7 correct!');
