@@ -4,11 +4,11 @@ var name = prompt('Hello! What is your name?');
 alert ('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
 
 var q1 = 'Is Ariel an only child?';
-var a1 = prompt(q1);
+var a1 = prompt(q1).toLowerCase();
 console.log('Q: ' + q1);
 console.log('A:' + a1);
-if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' ) {
-  alert ('Sorry, ' + name + ' Ariel has two siblings.');
+if (a1 === 'yes' || a1 === 'y' ) {
+  alert ('Sorry, ' + name + ', Ariel has two siblings.');
 }
 else if (a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n') {
   alert ('Correct! Ariel has two siblings. Great work,' + name + '!');
