@@ -22,10 +22,10 @@ var a2 = prompt(q2);
 console.log('Q: ' + q2);
 console.log('A:' + a2);
 if (a2.toLowerCase() === 'yes' || a2.toLowerCase() === 'y') {
-  alert ('You\'re right! Ariel is crazy about knitting.');
+  alert ('You\'re right,' + name + '! Ariel is crazy about knitting.');
 }
 else if (a2.toLowerCase() === 'no' || a2.toLowerCase() === 'n') {
-  alert ('You must not know her, knitting is Ariel\'s favorite hobby.');
+  alert ('You must not know her very well, knitting is Ariel\'s favorite hobby.');
 }
 else {
   alert ('Hey ' + name + ', it\'s a yes or no question!');
