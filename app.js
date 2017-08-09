@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 
 var name = prompt('Hello! What is your name?');
 alert ('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
@@ -71,4 +71,19 @@ else if (a5.toLowerCase() === 'no' || a5.toLowerCase() === 'n') {
 }
 else {
   alert ('I\'m starting to think you are not my friend, ' + name + '.');
+} */
+
+var q6 = 'What year was Ariel born?';
+for (var i = 0; i < 4; i++) {
+  a6 = prompt (q6);
+  if (a6 === '1982') {
+    alert ('Correct! Great job!');
+    i += 4;
+  }
+  else if (i < 3) {
+    alert ('Sorry, try again!');
+  }
+  else if (i === 3) {
+    alert ('You ran out of guesses. Ariel was born in 1982.');
+  }
 }
