@@ -1,17 +1,20 @@
 'use strict';
 
+var name = prompt('Hello! What is your name?');
+alert ('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
+
 var q1 = 'Is Ariel an only child?';
 var a1 = prompt(q1);
 console.log('Q: ' + q1);
 console.log('A:' + a1);
 if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' ) {
-  alert ('Sorry, Ariel has two siblings.');
+  alert ('Sorry, ' + name + ' Ariel has two siblings.');
 }
 else if (a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n') {
-  alert ('Correct! Ariel has two siblings.');
+  alert ('Correct! Ariel has two siblings. Great work,' + name + '!');
 }
 else {
-  alert ('You didn\'t answer the question!');
+  alert (name + ', you didn\'t answer the question!');
 }
 
 var q2 = 'Does Ariel like knitting?';
@@ -25,7 +28,7 @@ else if (a2.toLowerCase() === 'no' || a2.toLowerCase() === 'n') {
   alert ('You must not know her, knitting is Ariel\'s favorite hobby.');
 }
 else {
-  alert ('It\'s a yes or no question!');
+  alert ('Hey ' + name + ', it\'s a yes or no question!');
 }
 
 var q3 = 'Is Ariel\'s favorite music genre rap?';
@@ -47,7 +50,7 @@ var a4 = prompt(q4);
 console.log('Q: ' + q4);
 console.log('A:' + a4);
 if (a4.toLowerCase() === 'yes' || a4.toLowerCase() === 'y') {
-  alert ('No, Ariel grew up in Seattle.');
+  alert ('No, Ariel grew up in Seattle. But she\'ll take that as a compliment!');
 }
 else if (a4.toLowerCase() === 'no' || a4.toLowerCase() === 'n') {
   alert ('Correct. Ariel is from Seattle!');
@@ -61,11 +64,11 @@ var a5 = prompt(q5);
 console.log('Q: ' + q5);
 console.log('A:' + a5);
 if (a5.toLowerCase() === 'yes' || a5.toLowerCase() === 'y') {
-  alert ('Right, Ariel has two cats.');
+  alert ('You\'re right, ' + name + ', Ariel has two cats.');
 }
 else if (a5.toLowerCase() === 'no' || a5.toLowerCase() === 'n') {
   alert ('Sorry, Ariel has two cats.');
 }
 else {
-  alert ('I\'m starting to think you are not my friend?');
+  alert ('I\'m starting to think you are not my friend, ' + name + '.');
 }
