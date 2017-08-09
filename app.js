@@ -88,8 +88,11 @@ for (var i = 0; i < 4; i++) {
     i += 4;
     score ++;
   }
-  else if (i < 3) {
-    alert ('Sorry, try again!');
+  else if (i < 3 && parseInt(a6) > 1982) {
+    alert ('Too young, I was born before that year! Try again!');
+  }
+  else if (i < 3 && parseInt(a6) < 1982) {
+    alert ('Too old, I was born after that year! Try again!');
   }
   else if (i === 3) {
     alert ('You ran out of guesses. Ariel was born in 1982.');
