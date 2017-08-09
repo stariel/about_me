@@ -10,10 +10,10 @@ var a1 = prompt(q1);
 console.log('Q: ' + q1);
 console.log('A:' + a1);
 if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' ) {
-  alert ('Sorry, ' + name + ', Ariel has two siblings.');
+  alert ('Sorry, ' + name + ', I have two siblings.');
 }
 else if (a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n') {
-  alert ('Correct! Ariel has two siblings. Great work,' + name + '!');
+  alert ('Correct! I have two siblings. Great work,' + name + '!');
   score++;
 }
 else {
@@ -40,10 +40,10 @@ var a3 = prompt(q3);
 console.log('Q: ' + q3);
 console.log('A:' + a3);
 if (a3.toLowerCase() === 'yes' || a3.toLowerCase() === 'y') {
-  alert ('No way! Ariel hates rap.');
+  alert ('No way! I hates rap.');
 }
 else if (a3.toLowerCase() === 'no' || a3.toLowerCase() === 'n') {
-  alert ('You\'re right, Ariel loves metal music.');
+  alert ('You\'re right, I love metal music.');
   score++;
 }
 else {
@@ -55,10 +55,10 @@ var a4 = prompt(q4);
 console.log('Q: ' + q4);
 console.log('A:' + a4);
 if (a4.toLowerCase() === 'yes' || a4.toLowerCase() === 'y') {
-  alert ('No, Ariel grew up in Seattle. But she\'ll take that as a compliment!');
+  alert ('No, I grew up in Seattle. But I\'ll take that as a compliment!');
 }
 else if (a4.toLowerCase() === 'no' || a4.toLowerCase() === 'n') {
-  alert ('Correct. Ariel is from Seattle!');
+  alert ('Correct. I am from Seattle!');
   score++;
 }
 else {
@@ -70,11 +70,11 @@ var a5 = prompt(q5);
 console.log('Q: ' + q5);
 console.log('A:' + a5);
 if (a5.toLowerCase() === 'yes' || a5.toLowerCase() === 'y') {
-  alert ('You\'re right, ' + name + ', Ariel has two cats.');
+  alert ('You\'re right, ' + name + ', I have two cats.');
   score++;
 }
 else if (a5.toLowerCase() === 'no' || a5.toLowerCase() === 'n') {
-  alert ('Sorry, Ariel has two cats.');
+  alert ('Sorry, I have two cats.');
 }
 else {
   alert ('I\'m starting to think you are not my friend, ' + name + '.');
@@ -95,16 +95,17 @@ for (var i = 0; i < 4; i++) {
     alert ('Too old, I was born after that year! Try again!');
   }
   else if (i === 3) {
-    alert ('You ran out of guesses. Ariel was born in 1982.');
+    alert ('You ran out of guesses. I was born in 1982.');
   }
 }
 
 var favPie = ['strawberry rhubarb', 'blackberry', 'pumpkin', 'coconut cream', 'lemon meringue'];
+var printPie = favPie.join(', ');
 var q7 = 'Name one of Ariel\'s top 5 flavors of pie';
 for (var i = 0; i < 6; i++) {
   var a7 = prompt (q7);
   if (favPie.includes(a7)) {
-    alert ('Correct! Great job! My favorite pie flavors are: ' + favPie);
+    alert ('Correct! Great job! My favorite pie flavors are: ' + printPie + '.');
     i += 6;
     score ++;
   }
@@ -112,7 +113,7 @@ for (var i = 0; i < 6; i++) {
     alert ('Sorry, try again!');
   }
   else if (i === 5) {
-    alert ('You ran out of guesses. My favorite pie flavors are: ' + favPie);
+    alert ('You ran out of guesses. My favorite pie flavors are: ' + printPie + ',');
   }
 }
 
