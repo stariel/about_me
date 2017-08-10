@@ -1,27 +1,32 @@
 'use strict';
 
 var score = 0;
+var name;
 
-function name() {var name = prompt('Hello! What is your name?');
+function name() {name = prompt('Hello! What is your name?');
   alert('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
 }
 
 name();
 
-var q1 = 'Is Ariel an only child?';
-var a1 = prompt(q1);
-console.log('Q: ' + q1);
-console.log('A: ' + a1);
-if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' ) {
-  alert('Sorry, ' + name + ', I have two siblings.');
+function sibling(){
+  var q1 = 'Is Ariel an only child?';
+  var a1 = prompt(q1);
+  console.log('Q: ' + q1);
+  console.log('A: ' + a1);
+  if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' ) {
+    alert('Sorry, ' + name + ', I have two siblings.');
+  }
+  else if (a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n') {
+    alert('Correct! I have two siblings. Great work, ' + name + '!');
+    score++;
+  }
+  else {
+    alert(name + ', you didn\'t answer the question!');
+  }
 }
-else if (a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n') {
-  alert('Correct! I have two siblings. Great work,' + name + '!');
-  score++;
-}
-else {
-  alert(name + ', you didn\'t answer the question!');
-}
+
+sibling();
 
 var q2 = 'Does Ariel like knitting?';
 var a2 = prompt(q2);
