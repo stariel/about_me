@@ -83,19 +83,24 @@ else {
 var q6 = 'What year was Ariel born?';
 for (var i = 0; i < 4; i++) {
   var a6 = prompt (q6);
+  console.log('Q: ' + q6);
   if (a6 === '1982') {
     alert ('Correct! Great job!');
+    console.log('A:' + a6);
     i += 4;
     score ++;
   }
   else if (i < 3 && parseInt(a6) > 1982) {
     alert ('Too young, I was born before that year! Try again!');
+    console.log('A:' + a6);
   }
   else if (i < 3 && parseInt(a6) < 1982) {
     alert ('Too old, I was born after that year! Try again!');
+    console.log('A:' + a6);
   }
   else if (i === 3) {
     alert ('You ran out of guesses. I was born in 1982.');
+    console.log('A:' + a6);
   }
 }
 
@@ -104,16 +109,20 @@ var printPie = favPie.join(', ');
 var q7 = 'Name one of Ariel\'s top 5 flavors of pie';
 for (var i = 0; i < 6; i++) {
   var a7 = prompt (q7);
+  console.log('Q: ' + q7);
   if (favPie.includes(a7.toLowerCase())) {
     alert ('Correct! Great job! My favorite pie flavors are: ' + printPie + '.');
+    console.log('A:' + a7);
     i += 6;
     score ++;
   }
   else if (i < 5) {
     alert ('Sorry, try again!');
+    console.log('A:' + a7);
   }
   else if (i === 5) {
     alert ('You ran out of guesses. My favorite pie flavors are: ' + printPie + ',');
+    console.log('A:' + a7);
   }
 }
 
