@@ -129,24 +129,28 @@ function birthYear() {
 
 birthYear();
 
-var favPie = ['strawberry rhubarb', 'blackberry', 'pumpkin', 'coconut cream', 'lemon meringue'];
-var printPie = favPie.join(', ');
-var q7 = 'Name one of Ariel\'s top 5 flavors of pie';
-for (var i = 0; i < 6; i++) {
-  var a7 = prompt (q7);
-  console.log('Q: ' + q7);
-  console.log('A: ' + a7);
-  if (favPie.includes(a7.toLowerCase())) {
-    alert('Correct! Great job! My favorite pie flavors are: ' + printPie + '.');
-    i += 6;
-    score ++;
-  }
-  else if (i < 5) {
-    alert('Sorry, try again!');
-  }
-  else if (i === 5) {
-    alert('You ran out of guesses. My favorite pie flavors are: ' + printPie + ',');
+function pie() {
+  var favPie = ['strawberry rhubarb', 'blackberry', 'pumpkin', 'coconut cream', 'lemon meringue'];
+  var printPie = favPie.join(', ');
+  var q7 = 'Name one of Ariel\'s top 5 flavors of pie';
+  for (var i = 0; i < 6; i++) {
+    var a7 = prompt (q7);
+    console.log('Q: ' + q7);
+    console.log('A: ' + a7);
+    if (favPie.includes(a7.toLowerCase())) {
+      alert('Correct! Great job! My favorite pie flavors are: ' + printPie + '.');
+      i += 6;
+      score ++;
+    }
+    else if (i < 5) {
+      alert('Sorry, try again!');
+    }
+    else if (i === 5) {
+      alert('You ran out of guesses. My favorite pie flavors are: ' + printPie + ',');
+    }
   }
 }
+
+pie();
 
 alert('Thanks so much for playing my guessing game! You got ' + score + '/7 correct!');
