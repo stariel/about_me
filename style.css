@@ -1,8 +1,11 @@
 
 * {
   font-family: century, sans-serif;
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: lightGrey;
+  box-sizing: border-box
 }
+
+
 
 #pageTitle {
 font-size: 100px;
@@ -10,14 +13,22 @@ text-align: center;
 color: DarkBlue;
 width: 960px;
 height: 400px;
+margin: auto;
 background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/20245529_10103911502254921_50071285095475837_n.jpg?oh=9f6cef2a39ee4d613c53843a47fae54a&oe=5A2D711C");
 }
 
-img {
+img.me {
   border-radius: 10%;
   float: left;
 }
 
 .clearfix {
   clear: both;
+}
+
+.exp {
+  width: 40%;
+  margin: auto;
+  padding-left: 40px;
+  display: inline-block;
 }
