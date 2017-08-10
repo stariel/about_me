@@ -7,8 +7,6 @@ function name() {name = prompt('Hello! What is your name?');
   alert('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
 }
 
-name();
-
 function sibling(){
   var q1 = 'Is Ariel an only child?';
   var a1 = prompt(q1);
@@ -25,8 +23,6 @@ function sibling(){
     alert(name + ', you didn\'t answer the question!');
   }
 }
-
-sibling();
 
 function knitting() {
   var q2 = 'Does Ariel like knitting?';
@@ -45,8 +41,6 @@ function knitting() {
   }
 }
 
-knitting();
-
 function music(){
   var q3 = 'Is Ariel\'s favorite music genre rap?';
   var a3 = prompt(q3);
@@ -63,8 +57,6 @@ function music(){
     alert('Just type \"yes\" or \"no\", it\'s not that hard!');
   }
 }
-
-music();
 
 function canada() {
   var q4 = 'Is Ariel Canadian?';
@@ -83,8 +75,6 @@ function canada() {
   }
 }
 
-canada();
-
 function pets() {
   var q5 = 'Does Ariel have pets?';
   var a5 = prompt(q5);
@@ -101,8 +91,6 @@ function pets() {
     alert('I\'m starting to think you are not my friend, ' + name + '.');
   }
 }
-
-pets();
 
 function birthYear() {
   var q6 = 'What year was Ariel born?';
@@ -127,8 +115,6 @@ function birthYear() {
   }
 }
 
-birthYear();
-
 function pie() {
   var favPie = ['strawberry rhubarb', 'blackberry', 'pumpkin', 'coconut cream', 'lemon meringue'];
   var printPie = favPie.join(', ');
@@ -151,6 +137,13 @@ function pie() {
   }
 }
 
+name();
+sibling();
+knitting();
+music();
+canada();
+pets();
+birthYear();
 pie();
 
 alert('Thanks so much for playing my guessing game! You got ' + score + '/7 correct!');
