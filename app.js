@@ -104,7 +104,7 @@ var printPie = favPie.join(', ');
 var q7 = 'Name one of Ariel\'s top 5 flavors of pie';
 for (var i = 0; i < 6; i++) {
   var a7 = prompt (q7);
-  if (favPie.includes(a7)) {
+  if (favPie.includes(a7.toLowerCase())) {
     alert ('Correct! Great job! My favorite pie flavors are: ' + printPie + '.');
     i += 6;
     score ++;
