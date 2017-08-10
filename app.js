@@ -2,8 +2,11 @@
 
 var score = 0;
 
-var name = prompt('Hello! What is your name?');
-alert ('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
+function name() {var name = prompt('Hello! What is your name?');
+  alert('Nice to meet you, ' + name + '. Today we\'re going to play a guessing game to get to know me - I\'m Ariel.');
+}
+
+name();
 
 var q1 = 'Is Ariel an only child?';
 var a1 = prompt(q1);
