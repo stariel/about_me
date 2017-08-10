@@ -66,20 +66,24 @@ function music(){
 
 music();
 
-var q4 = 'Is Ariel Canadian?';
-var a4 = prompt(q4);
-console.log('Q: ' + q4);
-console.log('A: ' + a4);
-if (a4.toLowerCase() === 'yes' || a4.toLowerCase() === 'y') {
-  alert('No, I grew up in Seattle. But I\'ll take that as a compliment!');
+function canada() {
+  var q4 = 'Is Ariel Canadian?';
+  var a4 = prompt(q4);
+  console.log('Q: ' + q4);
+  console.log('A: ' + a4);
+  if (a4.toLowerCase() === 'yes' || a4.toLowerCase() === 'y') {
+    alert('No, I grew up in Seattle. But I\'ll take that as a compliment!');
+  }
+  else if (a4.toLowerCase() === 'no' || a4.toLowerCase() === 'n') {
+    alert('Correct. I am from Seattle!');
+    score++;
+  }
+  else {
+    alert('Why do you insist on being difficult?');
+  }
 }
-else if (a4.toLowerCase() === 'no' || a4.toLowerCase() === 'n') {
-  alert('Correct. I am from Seattle!');
-  score++;
-}
-else {
-  alert('Why do you insist on being difficult?');
-}
+
+canada();
 
 var q5 = 'Does Ariel have pets?';
 var a5 = prompt(q5);
