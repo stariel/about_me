@@ -104,26 +104,30 @@ function pets() {
 
 pets();
 
-var q6 = 'What year was Ariel born?';
-for (var i = 0; i < 4; i++) {
-  var a6 = prompt (q6);
-  console.log('Q: ' + q6);
-  console.log('A: ' + a6);
-  if (a6 === '1982') {
-    alert('Correct! Great job!');
-    i += 4;
-    score ++;
-  }
-  else if (i < 3 && parseInt(a6) > 1982) {
-    alert('Too young, I was born before that year! Try again!');
-  }
-  else if (i < 3 && parseInt(a6) < 1982) {
-    alert('Too old, I was born after that year! Try again!');
-  }
-  else if (i === 3) {
-    alert('You ran out of guesses. I was born in 1982.');
+function birthYear() {
+  var q6 = 'What year was Ariel born?';
+  for (var i = 0; i < 4; i++) {
+    var a6 = prompt (q6);
+    console.log('Q: ' + q6);
+    console.log('A: ' + a6);
+    if (a6 === '1982') {
+      alert('Correct! Great job!');
+      i += 4;
+      score ++;
+    }
+    else if (i < 3 && parseInt(a6) > 1982) {
+      alert('Too young, I was born before that year! Try again!');
+    }
+    else if (i < 3 && parseInt(a6) < 1982) {
+      alert('Too old, I was born after that year! Try again!');
+    }
+    else if (i === 3) {
+      alert('You ran out of guesses. I was born in 1982.');
+    }
   }
 }
+
+birthYear();
 
 var favPie = ['strawberry rhubarb', 'blackberry', 'pumpkin', 'coconut cream', 'lemon meringue'];
 var printPie = favPie.join(', ');
