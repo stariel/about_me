@@ -28,20 +28,24 @@ function sibling(){
 
 sibling();
 
-var q2 = 'Does Ariel like knitting?';
-var a2 = prompt(q2);
-console.log('Q: ' + q2);
-console.log('A: ' + a2);
-if (a2.toLowerCase() === 'yes' || a2.toLowerCase() === 'y') {
-  alert('You\'re right, ' + name + '! Ariel is crazy about knitting.');
-  score++;
+function knitting() {
+  var q2 = 'Does Ariel like knitting?';
+  var a2 = prompt(q2);
+  console.log('Q: ' + q2);
+  console.log('A: ' + a2);
+  if (a2.toLowerCase() === 'yes' || a2.toLowerCase() === 'y') {
+    alert('You\'re right, ' + name + '! Ariel is crazy about knitting.');
+    score++;
+  }
+  else if (a2.toLoerCase() === 'no' || a2.toLowerCase() === 'n') {
+    alert('You must not know her very well, knitting is Ariel\'s favorite hobby.');
+  }
+  else {
+    alert('Hey ' + name + ', it\'s a yes or no question!');
+  }
 }
-else if (a2.toLoerCase() === 'no' || a2.toLowerCase() === 'n') {
-  alert('You must not know her very well, knitting is Ariel\'s favorite hobby.');
-}
-else {
-  alert('Hey ' + name + ', it\'s a yes or no question!');
-}
+
+knitting();
 
 var q3 = 'Is Ariel\'s favorite music genre rap?';
 var a3 = prompt(q3);
