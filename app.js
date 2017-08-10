@@ -47,20 +47,24 @@ function knitting() {
 
 knitting();
 
-var q3 = 'Is Ariel\'s favorite music genre rap?';
-var a3 = prompt(q3);
-console.log('Q: ' + q3);
-console.log('A: ' + a3);
-if (a3.toLowerCase() === 'yes' || a3.toLowerCase() === 'y') {
-  alert('No way! I hate rap.');
+function music(){
+  var q3 = 'Is Ariel\'s favorite music genre rap?';
+  var a3 = prompt(q3);
+  console.log('Q: ' + q3);
+  console.log('A: ' + a3);
+  if (a3.toLowerCase() === 'yes' || a3.toLowerCase() === 'y') {
+    alert('No way! I hate rap.');
+  }
+  else if (a3.toLowerCase() === 'no' || a3.toLowerCase() === 'n') {
+    alert('You\'re right, I love metal music.');
+    score++;
+  }
+  else {
+    alert('Just type \"yes\" or \"no\", it\'s not that hard!');
+  }
 }
-else if (a3.toLowerCase() === 'no' || a3.toLowerCase() === 'n') {
-  alert('You\'re right, I love metal music.');
-  score++;
-}
-else {
-  alert('Just type \"yes\" or \"no\", it\'s not that hard!');
-}
+
+music();
 
 var q4 = 'Is Ariel Canadian?';
 var a4 = prompt(q4);
