@@ -85,20 +85,24 @@ function canada() {
 
 canada();
 
-var q5 = 'Does Ariel have pets?';
-var a5 = prompt(q5);
-console.log('Q: ' + q5);
-console.log('A: ' + a5);
-if (a5.toLowerCase() === 'yes' || a5.toLowerCase() === 'y') {
-  alert('You\'re right, ' + name + ', I have two cats.');
-  score++;
+function pets() {
+  var q5 = 'Does Ariel have pets?';
+  var a5 = prompt(q5);
+  console.log('Q: ' + q5);
+  console.log('A: ' + a5);
+  if (a5.toLowerCase() === 'yes' || a5.toLowerCase() === 'y') {
+    alert('You\'re right, ' + name + ', I have two cats.');
+    score++;
+  }
+  else if (a5.toLowerCase() === 'no' || a5.toLowerCase() === 'n') {
+    alert('Sorry, I have two cats.');
+  }
+  else {
+    alert('I\'m starting to think you are not my friend, ' + name + '.');
+  }
 }
-else if (a5.toLowerCase() === 'no' || a5.toLowerCase() === 'n') {
-  alert('Sorry, I have two cats.');
-}
-else {
-  alert('I\'m starting to think you are not my friend, ' + name + '.');
-}
+
+pets();
 
 var q6 = 'What year was Ariel born?';
 for (var i = 0; i < 4; i++) {
