@@ -1,25 +1,57 @@
 
 * {
   font-family: century, sans-serif;
-  background-color: lightGrey;
   box-sizing: border-box
 }
 
+body {
+    background-color: lightGrey;
+}
 
+h1 {
+  margin: 0;
+  font-size: 80px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  margin-top: 20px;
+}
 
-#pageTitle {
-font-size: 100px;
-text-align: center;
-color: DarkBlue;
-width: 960px;
-height: 400px;
-margin: auto;
-background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/20245529_10103911502254921_50071285095475837_n.jpg?oh=9f6cef2a39ee4d613c53843a47fae54a&oe=5A2D711C");
+#Vegas {
+  position: relative;
+  width: 100%;
+}
+
+header {
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 75px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline;
+  border: 2px solid;
+  border-color: purple;
+  padding: 20px;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+nav li {
+  margin: 5px;
 }
 
 img.me {
   border-radius: 10%;
-  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .clearfix {
