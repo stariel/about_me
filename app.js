@@ -33,7 +33,7 @@ function knitting() {
     alert('You\'re right, ' + name + '! Ariel is crazy about knitting.');
     score++;
   }
-  else if (a2.toLoerCase() === 'no' || a2.toLowerCase() === 'n') {
+  else if (a2.toLowerCase() === 'no' || a2.toLowerCase() === 'n') {
     alert('You must not know her very well, knitting is Ariel\'s favorite hobby.');
   }
   else {
