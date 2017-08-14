@@ -35,7 +35,8 @@ nav ul li{
   list-style: none;
   display: inline;
   border: 2px solid;
-  border-color: purple;
+  border-color: black;
+  background-color: darkGrey;
   padding: 20px;
 }
 nav ul {
@@ -52,6 +53,13 @@ img.me {
   border-radius: 10%;
   margin-top: 10px;
   margin-left: 5px;
+  width: 40%;
+}
+
+img.lyra {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 40%;
 }
 
 .clearfix {
@@ -62,5 +70,12 @@ img.me {
   width: 40%;
   margin: auto;
   padding-left: 40px;
+  display: inline-block;
+}
+
+.int {
+  width: 40%;
+  margin: auto;
+  padding-right: 40px;
   display: inline-block;
 }
