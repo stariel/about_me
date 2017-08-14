@@ -28,7 +28,7 @@ header {
 
 nav {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 75px;
+  height: 73px;
 }
 
 nav ul li{
@@ -60,6 +60,8 @@ img.lyra {
   margin-top: 10px;
   margin-left: 5px;
   width: 40%;
+  position: relative;
+  float: right;
 }
 
 .clearfix {
@@ -73,9 +75,16 @@ img.lyra {
   display: inline-block;
 }
 
-.int {
+div.int {
   width: 40%;
   margin: auto;
-  padding-right: 40px;
+  padding-left: 40px;
+  position: relative;
+  left: 10px;
+  margin: 50px;
   display: inline-block;
+}
+
+#top10 {
+  display: block;
 }
